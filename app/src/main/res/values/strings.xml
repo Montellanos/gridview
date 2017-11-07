@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">ScrollView</string>
+    <string name="app_name">Mi toolbar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="a_fragment">Hello A fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="b_fragment">Hello B fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="c_fragment">Hello C fragment</string>
 </resources>

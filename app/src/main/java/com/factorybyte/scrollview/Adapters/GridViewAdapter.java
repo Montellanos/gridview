@@ -6,26 +6,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.factorybyte.scrollview.R;
 
-import org.w3c.dom.Text;
-
 /**
- * Created by Jorge on 6/11/2017.
+ * Created by Jorge on 7/11/2017.
  */
 
-public class MyAdapter extends BaseAdapter {
+public class GridViewAdapter extends BaseAdapter{
+
 
     Context context;
     int images[];
-    String textos[];
     LayoutInflater inflater;
 
-    public MyAdapter(Context context, int images[], String textos[]){
+    public GridViewAdapter(Context context, int images[]){
         this.images = images;
-        this.textos = textos;
         inflater = (LayoutInflater.from(context));
     }
 
@@ -47,12 +43,8 @@ public class MyAdapter extends BaseAdapter {
         view = inflater.inflate(R.layout.grid_item, null);
         ImageView image = (ImageView) view.findViewById(R.id.imageView);
         image.setImageResource(images[i]);
-        TextView text = (TextView) view.findViewById(R.id.textView);
-        text.setText(textos[i]);
         return view;
     }
-
-
 
 
 
